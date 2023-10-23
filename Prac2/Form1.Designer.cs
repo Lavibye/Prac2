@@ -32,13 +32,15 @@
             this.роботаЗМасивамиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.одновимірніМасивиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.двовимірніМасивиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unitTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.роботаЗМасивамиToolStripMenuItem});
+            this.роботаЗМасивамиToolStripMenuItem,
+            this.unitTestToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -68,6 +70,13 @@
             this.двовимірніМасивиToolStripMenuItem.Text = "Двовимірні масиви";
             this.двовимірніМасивиToolStripMenuItem.Click += new System.EventHandler(this.двовимірніМасивиToolStripMenuItem_Click);
             // 
+            // unitTestToolStripMenuItem
+            // 
+            this.unitTestToolStripMenuItem.Name = "unitTestToolStripMenuItem";
+            this.unitTestToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.unitTestToolStripMenuItem.Text = "UnitTest";
+            this.unitTestToolStripMenuItem.Click += new System.EventHandler(this.unitTestToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -91,6 +100,7 @@
         private System.Windows.Forms.ToolStripMenuItem роботаЗМасивамиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem одновимірніМасивиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem двовимірніМасивиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem unitTestToolStripMenuItem;
     }
 }
 
