@@ -31,7 +31,7 @@ namespace Prac2
             {
                 int n = Convert.ToInt32(textBox1.Text);
                 Arrays a = new Arrays(n);
-                for (int i = 0; i < a.Lenght; i++)
+                for (int i = 0; i < n; i++)
                 {
                     dataGridView1.Rows.Add(a[i].ToString());
                 }

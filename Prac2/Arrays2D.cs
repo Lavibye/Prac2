@@ -35,7 +35,7 @@ namespace Prac2
             }
             set
             {
-                if (0 <= i && i < x_lenght && 0 <= j && j < y_lenght && value >= 10 && value <= 10)
+                if (0 <= i && i < x_lenght && 0 <= j && j < y_lenght && value >= -10 && value <= 10)
                     a[i, j] = value;
                 else
                 {
@@ -55,14 +55,6 @@ namespace Prac2
                 for (int j = 0; j < y_lenght; j++)
                     a[i,j] = rand.Next(-10, 10);
 
-        }
-        public Arrays2D()
-        {
-            a = new int[x_lenght, y_lenght];
-            Random rand = new Random();
-            for (int i = 0; i < x_lenght; i++)
-                for (int j = 0; j < y_lenght; j++)
-                    a[i, j] = rand.Next(-10, 10);
         }
         public (int, int) DiagonalSumProduct
         {

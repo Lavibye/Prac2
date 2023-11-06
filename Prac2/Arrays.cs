@@ -10,19 +10,17 @@ namespace Prac2
     {
         public bool error = false;
         int[] a;
-        int lenght = 15;
-
-        public int Lenght
+        int Lenght = 15;
+        public int Length
         {
-            get { return lenght; }
-            set { lenght = value; }
+            get { return Lenght; }
+            set { Lenght = value; }
         }
-
         public int this[int i]
         {
             get
             {
-                if (0 <= i && i < lenght)
+                if (0 <= i && i < Length)
                     return a[i];
                 else
                 {
@@ -32,15 +30,15 @@ namespace Prac2
             }
             set
             {
-                if (0 <= i && i < lenght && value >= 100 && value <= 100)
+                if (0 <= i && i < Length && value >= -15 && value <= 30)
                     a[i] = value;
                 else
-                { error = true; }
+                    error = true;
             }
         }
         public Arrays()
         {
-            a = new int[lenght];
+            a = new int[Length];
         }
         public Arrays(int[] mas)
         {
@@ -48,21 +46,20 @@ namespace Prac2
         }
         public Arrays(int size)
         {
-            Lenght = size;
-            a = new int[lenght];
+            Length = size;
+            a = new int[Length];
             Random rand = new Random();
-            for (int i = 0; i < lenght; i++)
+            for (int i = 0; i < Length; i++)
             {
-                a[i] = rand.Next(-15, 31);
+                a[i] = rand.Next(-15, 30);
             }
         }
-
         public (int maxValue, int index) FindMax()
         {
             int maxVal = a[0];
             int idx = 0;
 
-            for (int i = 1; i < lenght; i++)
+            for (int i = 1; i < Length; i++)
             {
                 if (a[i] > maxVal)
                 {
@@ -70,7 +67,6 @@ namespace Prac2
                     idx = i;
                 }
             }
-
             return (maxVal, idx);
         }
     }

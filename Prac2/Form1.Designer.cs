@@ -33,6 +33,7 @@
             this.одновимірніМасивиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.двовимірніМасивиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.unitTestToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.файлиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +41,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.роботаЗМасивамиToolStripMenuItem,
-            this.unitTestToolStripMenuItem});
+            this.unitTestToolStripMenuItem,
+            this.файлиToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -77,6 +79,13 @@
             this.unitTestToolStripMenuItem.Text = "UnitTest";
             this.unitTestToolStripMenuItem.Click += new System.EventHandler(this.unitTestToolStripMenuItem_Click);
             // 
+            // файлиToolStripMenuItem
+            // 
+            this.файлиToolStripMenuItem.Name = "файлиToolStripMenuItem";
+            this.файлиToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.файлиToolStripMenuItem.Text = "Файли";
+            this.файлиToolStripMenuItem.Click += new System.EventHandler(this.файлиToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,6 +110,7 @@
         private System.Windows.Forms.ToolStripMenuItem одновимірніМасивиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem двовимірніМасивиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem unitTestToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem файлиToolStripMenuItem;
     }
 }
 

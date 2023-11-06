@@ -37,5 +37,12 @@ namespace Prac2
             f.Show();
             this.Hide();
         }
+
+        private void файлиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            File f = new File();
+            f.Show();
+            this.Hide();
+        }
     }
 }
